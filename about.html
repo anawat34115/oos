@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา | บริษัท โอโอเอส โปรเกรสชั่น จำกัด</title>
+
+    <!-- 1. ดึงฟอนต์จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 2. ดึง Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif']
+                    },
+                    colors: {
+                        oosBlue: '#005bb5',
+                        oosGreen: '#00a650',
+                        oosRed: '#e31837',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- 3. ใส่ CSS บังคับ (Fallback) เผื่อ Tailwind Config ไม่โหลด -->
+    <style>
+        * {
+            font-family: 'Prompt', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- Header: ดีไซน์แบบเดียวกับหน้าแรก (สไตล์ที่ 1) -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="424597.jpg" alt="โลโก้ โอโอเอส โปรเกรสชั่น" class="h-11 w-auto object-contain">
+                <span class="font-bold text-xl text-slate-900 hidden md:block">โอโอเอส โปรเกรสชั่น</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="index.html" class="text-slate-600 hover:text-oosBlue transition">หน้าแรก</a>
+                <a href="about.html" class="text-oosBlue">เกี่ยวกับเรา</a>
+                <a href="portpolio.html" class="text-slate-600 hover:text-oosBlue transition">ผลงานที่ผ่านมา</a>
+                <a href="contact.html" class="text-slate-600 hover:text-oosBlue transition">ติดต่อเรา</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="contact.html"
+                    class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-oosRed transition shadow-sm">ขอใบเสนอราคา</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Banner ส่วนหัวของหน้าย่อย (Page Header Banner) -->
+        <section
+            class="relative bg-gradient-to-br from-slate-900 via-oosBlue to-slate-900 text-white py-16 md:py-24 overflow-hidden">
+            <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <span
+                    class="inline-block bg-white/10 text-oosGreen px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wider mb-3">Company
+                    Profile</span>
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">เกี่ยวกับเรา</h1>
+                <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
+                    ทำความรู้จักกับ โอโอเอส โปรเกรสชั่น ผู้รับเหมาตกแต่งภายในและสร้างสรรค์พื้นที่ตอบโจทย์ทุกธุรกิจ
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Introduction Section (ข้อมูลหลักของบริษัท) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- ฝั่งรูปภาพประกอบ สามารถเปลี่ยน src เป็นรูปผลงานตกแต่งภายในสวยๆ ได้เลยครับ -->
+                    <div
+                        class="lg:col-span-5 bg-gradient-to-tr from-slate-100 to-slate-200 rounded-3xl h-[400px] flex items-center justify-center border border-slate-200/60 shadow-inner overflow-hidden">
+                        <span class="text-slate-400 font-medium p-4 text-center">ภาพบรรยากาศหน้าสำนักงาน /
+                            หรือภาพทีมงานออกแบบตกแต่ง</span>
+                    </div>
+
+                    <!-- ฝั่งข้อความบรีฟของลูกค้า -->
+                    <div class="lg:col-span-7">
+                        <div class="text-xs font-bold uppercase tracking-wider text-oosBlue mb-2">WHO WE ARE</div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6 leading-snug">
+                            บริษัท โอโอเอส โปรเกรสชั่น จำกัด <br>
+                            <span class="text-oosBlue uppercase text-xl md:text-2xl font-semibold tracking-wide">OOS
+                                PROGRESSION COMPANY LIMITED</span>
+                        </h2>
+                        <div class="w-12 h-1 bg-oosRed mb-6"></div>
+                        <p class="text-slate-600 mb-6 leading-relaxed text-base">
+                            เราคือ **ผู้รับเหมาชั้นนำ** ผู้ให้บริการงาน ตกแต่งอาคาร สำนักงาน ร้านค้า ห้างสรรพสินค้า
+                            โรงแรมชั้นนำ และโครงการต่างๆ ทุกชนิด ด้วยประสบการณ์ยาวนาน
+                            และทางบริษัทยึดถือนโยบายสร้างผลงานที่ดีมีคุณภาพ
+                        </p>
+                        <p class="text-slate-600 mb-8 leading-relaxed text-base">
+                            นอกจากนี้เราให้บริการแบบครบวงจร สะดวก รวดเร็ว หมดกังวลเรื่องปัญหาระหว่างการทำงาน
+                            พร้อมส่งมอบผลงานถึงลูกค้าด้วยความสุขและรอยยิ้ม
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- นโยบายและจุดเด่นการบริการ (Core Strengths จากข้อความของลูกค้า) -->
+        <section class="py-20 bg-slate-50 border-t border-b border-slate-100">
+            <div class="container mx-auto px-6 max-w-5xl text-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">นโยบายและการทำงานของเรา</h3>
+                <p class="text-slate-500 text-sm mb-16">มุ่งมั่นสร้างผลงานที่ใช่
+                    เพื่อส่งมอบประสบการณ์ที่ดีที่สุดแก่ลูกค้า</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- การ์ด 1: ผลงานมีคุณภาพ -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 group text-left">
+                        <div
+                            class="w-12 h-12 bg-blue-50 text-oosBlue rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                            01</div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">ผลงานที่ดีมีคุณภาพ</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">ยึดถือนโยบายการเลือกใช้วัสดุที่ได้มาตรฐาน
+                            ควบคุมงานอย่างละเอียดทุกขั้นตอนเพื่อให้ได้ผลงานที่ดีที่สุด</p>
+                    </div>
+                    <!-- การ์ด 2: ครบวงจร สะดวก รวดเร็ว -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 group text-left">
+                        <div
+                            class="w-12 h-12 bg-green-50 text-oosGreen rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                            02</div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">บริการแบบครบวงจร</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">ดูแลตั้งแต่การให้คำปรึกษา ออกแบบ จัดหา
+                            ไปจนถึงส่งมอบงานอย่างรวดเร็ว สะดวกสบายในที่เดียว</p>
+                    </div>
+                    <!-- การ์ด 3: หมดกังวล พร้อมรอยยิ้ม -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 group text-left">
+                        <div
+                            class="w-12 h-12 bg-red-50 text-oosRed rounded-xl flex items-center justify-center mb-6 font-bold text-lg">
+                            03</div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">หมดกังวล ไร้ปัญหา</h4>
+                        <p class="text-slate-500 text-sm leading-relaxed">บริหารงานอย่างมืออาชีพ โปร่งใส ตรวจสอบได้
+                            ลดข้อผิดพลาด พร้อมส่งมอบงานด้วยความสุขและรอยยิ้ม</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- พื้นที่รองรับงานตกแต่ง (Target Projects ของลูกค้า) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <div class="text-center mb-16">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-3">พื้นที่ที่เราเชี่ยวชาญ</h3>
+                    <p class="text-slate-500 text-sm">รับเหมาตกแต่งภายในโครงการหลากหลายรูปแบบ ทุกสเกลงาน</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="font-bold text-slate-900 text-base mb-1">อาคารทั่วไป</div>
+                        <div class="text-xs text-slate-400">Buildings</div>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="font-bold text-slate-900 text-base mb-1">สำนักงาน</div>
+                        <div class="text-xs text-slate-400">Offices</div>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="font-bold text-slate-900 text-base mb-1">ร้านค้า / ช็อป</div>
+                        <div class="text-xs text-slate-400">Shops & Retail</div>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                        <div class="font-bold text-slate-900 text-base mb-1">ห้างสรรพสินค้า</div>
+                        <div class="text-xs text-slate-400">Department Stores</div>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 col-span-2 md:col-span-1">
+                        <div class="font-bold text-slate-900 text-base mb-1">โรงแรมชั้นนำ</div>
+                        <div class="text-xs text-slate-400">Luxury Hotels</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA ท้ายหน้า: ดึงอารมณ์จากรอยยิ้มและความสุขของลูกค้า -->
+        <section class="bg-gradient-to-r from-oosBlue to-slate-900 py-16 text-white text-center">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">เริ่มต้นเปลี่ยนพื้นที่ของคุณกับเราวันนี้</h3>
+                <p class="text-slate-300 text-sm mb-8">ทีมงาน โอโอเอส โปรเกรสชั่น
+                    พร้อมเปลี่ยนไอเดียให้กลายเป็นผลงานตกแต่งคุณภาพที่จับต้องได้</p>
+                <div class="flex justify-center flex-wrap gap-4">
+                    <a href="contact.html"
+                        class="bg-oosGreen hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full text-sm shadow-lg shadow-oosGreen/10 transition">ปรึกษาและประเมินราคาฟรี</a>
+                    <a href="tel:02XXXXXXX"
+                        class="bg-white/10 text-white border border-white/20 font-semibold py-3 px-8 rounded-full text-sm hover:bg-white/20 transition">โทรหาเรา</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: ลิงก์และดีไซน์แบบเดียวกับหน้าแรกเพื่อความเป็นระบบ -->
+    <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-900">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-slate-900">
+            <div>
+                <h3 class="text-white font-bold text-sm mb-4">บริษัท โอโอเอส โปรเกรสชั่น จำกัด</h3>
+                <p class="leading-relaxed text-slate-500">ผู้รับเหมาชันนำบริการงานตกแต่งอาคาร สำนักงาน ร้านค้า
+                    ห้างสรรพสินค้า โรงแรมชั้นนำ และโครงการต่างๆ ทุกชนิด แบบครบวงจร</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-sm mb-4">เมนูลัด</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="index.html" class="hover:text-white transition">หน้าแรก</a>
+                    <a href="about.html" class="hover:text-white transition">เกี่ยวกับเรา</a>
+                    <a href="portpolio.html" class="hover:text-white transition">ผลงานที่ผ่านมา</a>
+                    <a href="contact.html" class="hover:text-white transition">ติดต่อเรา</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-sm mb-4">ติดต่อเรา</h3>
+                <p class="text-slate-500 mb-2">ที่อยู่บริษัท (รอระบุข้อมูลจริง)</p>
+                <p class="text-slate-500">โทร: (รอระบุ) | อีเมล: (รอระบุ)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 pt-8 text-center text-slate-600">
+            &copy; 2026 บริษัท โอโอเอส โปรเกรสชั่น จำกัด. สงวนลิขสิทธิ์.
+        </div>
+    </footer>
+
+</body>
+
+</html>
